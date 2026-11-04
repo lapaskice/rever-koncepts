@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#140f12">
+<title>RÊVER, banketu restorāns Rīgā</title>
+<meta name="description" content="Banketu zāle zem ķieģeļu arkām Ķengaragā: līdz 80 viesiem, autostāvvieta. Dizaina priekšlikums.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#140f12; --night2:#1d1619; --night3:#2a2024;
+  --wine:#5a1820; --wine2:#6e1f28;
+  --gold:#d9b36c; --gold-d:#bf9750;
+  --linen:#f6efe6; --lm:rgba(246,239,230,.76); --lf:rgba(246,239,230,.52); --line:rgba(217,179,108,.28);
+  --disp:"Oranienbaum","Times New Roman",serif; --body:"Golos Text",system-ui,sans-serif;
+  --g:20px; --max:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--linen);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+p{margin:0}
+[data-lang][hidden]{display:none!important}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(var(--g),env(safe-area-inset-left,0px));padding-right:max(var(--g),env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--disp);font-weight:400;line-height:1.02;margin:0;text-wrap:balance}
+.ey{font:600 12px/1.3 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;font:600 15px/1.1 var(--body);letter-spacing:.02em;text-decoration:none;border:1.5px solid var(--gold);background:var(--gold);color:var(--night);cursor:pointer}
+.btn:hover{background:var(--gold-d);border-color:var(--gold-d)}
+.btn.line{background:transparent;color:var(--linen);border-color:rgba(246,239,230,.45)}
+.btn.line:hover{border-color:var(--gold);color:var(--gold)}
+.btn svg{width:17px;height:17px;flex:none}
+
+.notice{background:#0b0809;color:var(--lm);font-size:13px;line-height:1.4;text-align:center;padding:8px var(--g)}
+.notice b{color:var(--gold)}
+.notice a{color:var(--linen)}
+
+/* the arch: every photo frame on the page is one of their arches */
+.arch{position:relative;margin:0}
+.arch .in{overflow:hidden;border-radius:999px 999px 0 0;background:var(--night2)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.arch::after{content:"";position:absolute;inset:-12px -12px auto -12px;height:calc(100% + 12px);border:1px solid var(--line);border-bottom:0;border-radius:999px 999px 0 0;pointer-events:none}
+.arch figcaption{font-size:13px;color:var(--lf);margin-top:12px}
+
+/* header + hero */
+.top{display:flex;align-items:center;gap:18px;padding-top:22px;padding-bottom:22px}
+.mark{text-decoration:none;margin-right:auto;line-height:1}
+.mark b{display:block;font:400 34px/1 var(--disp);letter-spacing:.14em}
+.mark small{display:block;font:600 10.5px/1.2 var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:5px}
+.tphone{text-decoration:none;font-weight:600}
+.lang{display:flex;gap:4px}
+.lang button{font:600 12px var(--body);letter-spacing:.08em;color:var(--lm);background:transparent;border:1px solid transparent;padding:7px 9px;cursor:pointer}
+.lang button[aria-pressed="true"]{color:var(--gold);border-color:var(--line)}
+.hero{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:72px;align-items:center;padding-top:24px;padding-bottom:96px}
+.hero h1{font-size:clamp(56px,7.4vw,118px);margin-top:20px;letter-spacing:-.005em}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.lead{font-size:18px;color:var(--lm);max-width:30em;margin-top:24px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 40px;margin-top:44px;padding-top:24px;border-top:1px solid var(--line)}
+.facts b{display:block;font:400 34px/1 var(--disp);color:var(--linen)}
+.facts div > span{display:block;font-size:13px;color:var(--lf);margin-top:6px}
+.hero .arch .in{aspect-ratio:3/4}
+
+/* their own words */
+.motto{background:var(--wine);text-align:center;padding:72px 0}
+.motto img{width:200px;margin:0 auto 18px;opacity:.85}
+.motto blockquote{margin:0}
+.motto p{font:400 clamp(32px,4.2vw,58px)/1.12 var(--disp);max-width:20em;margin:0 auto}
+.motto cite{display:block;font:500 13px/1.4 var(--body);font-style:normal;color:rgba(246,239,230,.72);margin-top:18px;letter-spacing:.04em}
+
+/* the hall: an arcade of three arches */
+.hall{padding:112px 0 96px}
+.sec-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:end}
+.sec-h h2{font-size:clamp(44px,5.4vw,80px);margin-top:16px}
+.sec-h .t{color:var(--lm);font-size:17px;max-width:32em}
+.sec-h .t+.t{margin-top:12px}
+.arcade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:64px;align-items:end}
+.arcade .arch .in{aspect-ratio:3/4.2}
+.arcade .mid .in{aspect-ratio:3/4.8}
+
+/* the table: changes every time */
+.table{background:var(--night2);padding:112px 0}
+.tgrid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:64px;align-items:center}
+.table h2{font-size:clamp(44px,5.4vw,80px);margin-top:16px}
+.table .q{margin:22px 0 0}
+.table .q p{font:400 30px/1.15 var(--disp);color:var(--gold)}
+.table .q cite{display:block;font-size:13px;color:var(--lf);font-style:normal;margin-top:8px}
+.table .t{color:var(--lm);margin-top:20px;max-width:30em}
+.themes{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+.themes button{font:500 15px var(--body);color:var(--linen);background:transparent;border:1px solid rgba(246,239,230,.3);padding:11px 16px;cursor:pointer}
+.themes button[aria-pressed="true"]{background:var(--linen);color:var(--night);border-color:var(--linen)}
+.stage{position:relative;margin:0}
+.stage .frame{position:relative;aspect-ratio:4/3;background:var(--night3);overflow:hidden}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s}
+.stage img.on{opacity:1}
+.stage figcaption{display:flex;justify-content:space-between;gap:16px;margin-top:14px;font-size:14px;color:var(--lf)}
+.stage figcaption b{font:400 24px/1 var(--disp);color:var(--linen)}
+
+/* kitchen */
+.kitchen{padding:112px 0}
+.kgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:end;margin-top:56px}
+.kgrid .arch .in{aspect-ratio:3/4}
+.kgrid .kq{align-self:center;padding-left:12px}
+.kq blockquote{margin:0}
+.kq p{font:400 30px/1.2 var(--disp)}
+.kq cite{display:block;font-size:13px;color:var(--lf);font-style:normal;margin-top:12px}
+.kq .ask{margin-top:32px;color:var(--lm);font-size:15px}
+.kq .ask a{color:var(--gold)}
+
+/* reviews */
+.rev{background:var(--wine);padding:96px 0}
+.rgrid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:56px}
+.score b{display:block;font:400 clamp(110px,12vw,170px)/.85 var(--disp)}
+.score > span{display:block;color:rgba(246,239,230,.82);margin-top:14px}
+.revs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px 44px}
+.revs figure{margin:0}
+.revs figure.first{grid-column:1/-1}
+.revs .q{font:400 23px/1.25 var(--disp)}
+.revs .first .q{font-size:clamp(28px,3vw,40px);line-height:1.15}
+.revs cite{display:block;font-size:13px;font-style:normal;color:rgba(246,239,230,.78);margin-top:12px}
+
+/* request */
+.ask-sec{padding:112px 0}
+.ask-sec h2{font-size:clamp(44px,5.4vw,80px);margin-top:16px}
+.ask-q{margin:18px 0 0;font:400 26px/1.2 var(--disp);color:var(--gold)}
+.ask-q cite{display:block;font:400 13px var(--body);font-style:normal;color:var(--lf);margin-top:8px}
+.ask-sec .t{color:var(--lm);margin-top:16px;max-width:34em}
+.ask-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;margin-top:44px;align-items:start}
+.f{margin-bottom:24px}
+.lab,.f label{display:block;font:600 12px/1.3 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--lf);margin-bottom:10px}
+.f label.check{display:flex;align-items:center;gap:12px;text-transform:none;letter-spacing:0;font:500 16px var(--body);color:var(--linen);cursor:pointer}
+.check input{width:20px;height:20px;accent-color:var(--gold)}
+.opt{text-transform:none;letter-spacing:0;font-weight:400}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 15px var(--body);color:var(--linen);background:transparent;border:1px solid rgba(246,239,230,.3);padding:11px 15px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--linen);color:var(--night);border-color:var(--linen)}
+input[type=date],input[type=text]{width:100%;max-width:420px;font:500 16px var(--body);color:var(--linen);background:var(--night2);border:1px solid rgba(246,239,230,.25);padding:12px;min-height:50px;color-scheme:dark}
+input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.hint{font-size:13px;color:var(--lf);margin-top:8px}
+.hint.err{color:#ff8c7a}
+.slip{background:var(--linen);color:var(--night);padding:26px 24px;position:sticky;top:20px;border-radius:200px 200px 0 0/80px 80px 0 0;padding-top:46px}
+.slip .to{font:600 12px/1.3 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#7a5c2c;text-align:center}
+.slip .body{white-space:pre-wrap;font:400 16px/1.6 var(--body);margin:18px 0 22px;min-height:120px}
+.send{display:grid;gap:10px}
+.send .btn{background:var(--night);border-color:var(--night);color:var(--linen)}
+.send .btn.line{background:transparent;color:var(--night);border-color:rgba(20,15,18,.4)}
+.slip .how{font-size:13px;color:rgba(20,15,18,.66);margin-top:14px}
+.slip .how a{color:var(--night)}
+
+/* find */
+.find{background:var(--night2);padding:96px 0}
+.fgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:start}
+.find h2{font-size:clamp(40px,4.8vw,68px);margin-top:16px}
+.find .addr{font-size:19px;margin-top:18px}
+.find .t{color:var(--lm);margin-top:8px}
+.find .go{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.hours{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);font-size:17px}
+.hours li > span:last-child{font-family:var(--disp);font-size:22px;line-height:1}
+.hours+p{font-size:13px;color:var(--lf);margin-top:12px}
+
+/* owner */
+.owner{padding:64px 0 80px}
+.own{border:1px solid var(--line);background:var(--night2)}
+.own summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;padding:18px 20px;font-weight:600}
+.own summary::after{content:"+";color:var(--gold);font-size:22px;line-height:1}
+.own[open] summary::after{content:"\2212"}
+.own summary::-webkit-details-marker{display:none}
+.own-b{padding:0 20px 24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 40px;color:var(--lm);font-size:15px}
+.own-b h3{font:600 16px/1.3 var(--body);color:var(--linen);margin-bottom:6px}
+.own-b .wide{grid-column:1/-1}
+.own-b ol{margin:0;padding-left:20px;display:grid;gap:8px}
+.own-b a{color:var(--gold)}
+footer{background:#0b0809;color:var(--lf);font-size:13px;padding:32px 0 100px}
+footer p+p{margin-top:8px}
+footer a{color:var(--lm)}
+
+.dock{display:none}
+
+@media (max-width:899px){
+  .tphone{display:none}
+  .top{padding-top:16px;padding-bottom:16px}
+  .mark b{font-size:28px}
+  .hero{grid-template-columns:minmax(0,1fr);gap:0;padding-top:4px;padding-bottom:64px}
+  .hero .arch{order:-1;width:74%;margin:12px auto 0}
+  .hero .arch .in{aspect-ratio:4/4.3}
+  .hero h1{font-size:clamp(50px,14.2vw,78px);margin-top:16px}
+  .hero .copy{padding-top:28px}
+  .lead{font-size:16px;margin-top:16px}
+  .cta{margin-top:24px}
+  .cta .btn{flex:1 1 auto}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px;margin-top:32px}
+  .facts b{font-size:26px}
+  .facts div:last-child{grid-column:1/-1}
+  .motto{padding:56px 0}
+  .hall,.table,.kitchen,.ask-sec{padding:72px 0}
+  .rev,.find{padding:64px 0}
+  .sec-h,.tgrid,.rgrid,.ask-grid,.fgrid,.own-b{grid-template-columns:minmax(0,1fr)}
+  .sec-h{gap:16px}
+  .arcade{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 22px;margin-top:44px}
+  .arcade .mid{grid-column:1/-1;grid-row:1;width:76%;margin:0 auto}
+  .tgrid{gap:36px}
+  .stage{margin:0 calc(-1*var(--g))}
+  .stage figcaption{padding:0 var(--g)}
+  .kgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;margin-top:40px}
+  .kgrid .kq{grid-column:1/-1;padding-left:0}
+  .kq p{font-size:26px}
+  .rgrid{gap:28px}
+  .revs{grid-template-columns:minmax(0,1fr);gap:28px}
+  .score b{font-size:112px}
+  .ask-grid{gap:32px}
+  .slip{position:static}
+  .fgrid{gap:36px}
+  .dock{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px max(12px,env(safe-area-inset-left,0px)) calc(10px + env(safe-area-inset-bottom,0px));background:rgba(11,8,9,.95);transform:translateY(110%);transition:transform .25s}
+  .dock.on{transform:none}
+  .dock .btn{flex:1;min-height:48px}
+  .dock .btn.line{flex:0 0 auto;padding:0 16px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.stage img,.dock{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+</svg>
+<div class="notice"><b>Nikita:</b> <span data-lang="lv">Dizaina priekšlikums, nav RÊVER oficiālā lapa.</span><span data-lang="ru" hidden>Дизайн-предложение, не официальный сайт.</span> <a href="#ipasniekam"><span data-lang="lv">Ko tā salabo?</span><span data-lang="ru" hidden>Что она исправляет?</span></a></div>
+
+<header class="wrap top">
+  <a class="mark" href="#sakums"><b>RÊVER</b><small><span data-lang="lv">banketu restorāns</span><span data-lang="ru" hidden>банкетный ресторан</span></small></a>
+  <a class="tphone" href="tel:+37126806002">26 806 002</a>
+  <div class="lang" role="group" aria-label="Valoda"><button type="button" data-set="lv" aria-pressed="true">LV</button><button type="button" data-set="ru" aria-pressed="false">RU</button></div>
+</header>
+
+<main>
+<section class="wrap hero" id="sakums">
+  <div class="copy">
+    <p class="ey"><span data-lang="lv">Banketu restorāns Ķengaragā, Rīgā</span><span data-lang="ru" hidden>Банкетный ресторан в Риге, в Кенгарагсе</span></p>
+    <h1><span data-lang="lv">Svinības zem <em>ķieģeļu arkām</em></span><span data-lang="ru" hidden>Праздник под <em>кирпичными арками</em></span></h1>
+    <p class="lead"><span data-lang="lv">Zāle līdz 80 viesiem ar autostāvvietu. Kāzām, jubilejām, uzņēmumu pasākumiem un bēru mielastiem.</span><span data-lang="ru" hidden>Зал до 80 гостей с парковкой. Для свадеб, юбилеев, корпоративов и поминальных обедов.</span></p>
+    <div class="cta" id="herocta">
+      <a class="btn" href="#pieteikums"><span data-lang="lv">Pieteikt datumu</span><span data-lang="ru" hidden>Оставить заявку</span></a>
+      <a class="btn line" href="tel:+37126806002"><svg aria-hidden="true"><use href="#i-tel"/></svg>26 806 002</a>
+    </div>
+    <div class="facts">
+      <div><b>80</b><span><span data-lang="lv">viesu zālē</span><span data-lang="ru" hidden>гостей в зале</span></span></div>
+      <div><b>4,7</b><span><span data-lang="lv">Google, 126 atsauksmes</span><span data-lang="ru" hidden>Google, 126 отзывов</span></span></div>
+      <div><b><span data-lang="lv">Ķengaraga 6</span><span data-lang="ru" hidden>Кенгарага 6</span></b><span><span data-lang="lv">ar autostāvvietu</span><span data-lang="ru" hidden>с парковкой</span></span></div>
+    </div>
+  </div>
+  <figure class="arch">
+    <div class="in"><img src="img/vakars.jpg" width="800" height="1067" alt="Garš galds ar augstām svecēm un lustrām vakara gaismā zem arkām" data-alt-ru="Длинный стол с высокими свечами и люстрами в вечернем свете под арками" fetchpriority="high"></div>
+  </figure>
+</section>
+
+<section class="motto">
+  <div class="wrap">
+    <img src="img/ornaments.png" width="480" height="133" alt="">
+    <blockquote>
+      <p data-lang="lv">„Katrs bankets Rêver ir īpaša noskaņa un svētku stāsts.”</p>
+      <p data-lang="ru" hidden>«Там, где собираются счастливые моменты!»</p>
+      <cite><span data-lang="lv">No restorāna Facebook ieraksta 2025. gada decembrī</span><span data-lang="ru" hidden>Из записи ресторана в Facebook, октябрь 2024 года</span></cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="hall" id="zale">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><p class="ey"><span data-lang="lv">Zāle</span><span data-lang="ru" hidden>Зал</span></p><h2><span data-lang="lv">Ķieģeļu arkas, koka sijas un lustras</span><span data-lang="ru" hidden>Кирпичные арки, балки и люстры</span></h2></div>
+      <div>
+        <p class="t"><span data-lang="lv">Gaišas apmestas sienas, smilšu krāsas ķieģelis, tumšs koks un baltas lustras virs galda. Galdus klāj gan vienā garā rindā cauri visai zālei, gan atsevišķi.</span><span data-lang="ru" hidden>Светлые оштукатуренные стены, кирпич песочного цвета, тёмное дерево и белые люстры над столом. Столы накрывают и одним длинным рядом через весь зал, и отдельно.</span></p>
+        <p class="t"><span data-lang="lv">Kā raksta paši saimnieki, zāle der gan šauram tuvāko lokam, gan lielam uzņēmuma pasākumam.</span><span data-lang="ru" hidden>Как пишут сами хозяева, зал подходит и для узкого круга близких, и для больших корпоративных мероприятий.</span></p>
+      </div>
+    </div>
+    <div class="arcade">
+      <figure class="arch"><div class="in"><img src="img/zale.jpg" width="800" height="966" loading="lazy" alt="Zāles kopskats: garš galds cauri visai zālei zem arkām" data-alt-ru="Общий вид зала: длинный стол через весь зал под арками"></div><figcaption><span data-lang="lv">Zāles kopskats viesa acīm. Foto: Natasha Čornaja, Google.</span><span data-lang="ru" hidden>Общий вид зала глазами гостя. Фото: Natasha Čornaja, Google.</span></figcaption></figure>
+      <figure class="arch mid"><div class="in"><img src="img/hero.jpg" width="900" height="1200" loading="lazy" alt="Banketa galds zem ķieģeļu arkām ar lustru, svecēm un zelta salvetēm" data-alt-ru="Банкетный стол под кирпичными арками с люстрой, свечами и золотыми салфетками"></div><figcaption><span data-lang="lv">Galds zem arkām. Foto: restorāna Facebook lapa.</span><span data-lang="ru" hidden>Стол под арками. Фото: страница ресторана в Facebook.</span></figcaption></figure>
+      <figure class="arch"><div class="in"><img src="img/bufete.jpg" width="800" height="1067" loading="lazy" alt="Bufetes galds ar zelta galdautu un zelta baloniem" data-alt-ru="Фуршетный стол с золотой скатертью и золотыми шарами"></div><figcaption><span data-lang="lv">Bufete. Foto: restorāna Facebook lapa.</span><span data-lang="ru" hidden>Фуршет. Фото: страница ресторана в Facebook.</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="table" id="galds">
+  <div class="wrap tgrid">
+    <div>
+      <p class="ey"><span data-lang="lv">Galda klājums</span><span data-lang="ru" hidden>Сервировка</span></p>
+      <h2><span data-lang="lv">Galds katru reizi ir cits</span><span data-lang="ru" hidden>Стол каждый раз другой</span></h2>
+      <blockquote class="q">
+        <p data-lang="lv">„Noskaņa sākas ar detaļām”</p>
+        <p data-lang="ru" hidden>«Погрузитесь в атмосферу праздника»</p>
+        <cite><span data-lang="lv">No restorāna Facebook ieraksta 2026. gada janvārī</span><span data-lang="ru" hidden>Из записи ресторана в Facebook, январь 2026 года</span></cite>
+      </blockquote>
+      <p class="t"><span data-lang="lv">Svētku galda klājums ir restorāna ziņā. Daļā fotogrāfiju dekorācijas veidojuši dekoratori, kurus restorāns min savos ierakstos.</span><span data-lang="ru" hidden>Праздничную сервировку стола ресторан берёт на себя. На части фотографий декор делали декораторы, которых ресторан называет в своих записях.</span></p>
+      <div class="themes" role="group" aria-label="Galda klājums">
+        <button type="button" data-t="balts" aria-pressed="true"><span data-lang="lv">Balts un eikalipts</span><span data-lang="ru" hidden>Белое и эвкалипт</span></button>
+        <button type="button" data-t="rudens" aria-pressed="false"><span data-lang="lv">Rudens</span><span data-lang="ru" hidden>Осень</span></button>
+        <button type="button" data-t="ziema" aria-pressed="false"><span data-lang="lv">Ziemassvētki</span><span data-lang="ru" hidden>Рождество</span></button>
+        <button type="button" data-t="zelts" aria-pressed="false"><span data-lang="lv">Zelts</span><span data-lang="ru" hidden>Золото</span></button>
+      </div>
+    </div>
+    <figure class="stage">
+      <div class="frame">
+        <img class="on" data-t="balts" src="img/t-balts.jpg" width="958" height="638" loading="lazy" alt="Balts galdauts, eikalipta zari un ziedi podiņā, balta salvete ar ogu zariņu" data-alt-ru="Белая скатерть, ветки эвкалипта и цветы в горшке, белая салфетка с веточкой ягод">
+        <img data-t="rudens" src="img/t-rudens.jpg" width="1000" height="688" loading="lazy" alt="Rudens galds ar ķirbjiem, sarkanām lapām un zaļām glāzēm" data-alt-ru="Осенний стол с тыквами, красными листьями и зелёными бокалами">
+        <img data-t="ziema" src="img/t-ziema.jpg" width="1000" height="667" loading="lazy" alt="Ziemassvētku galds ar sarkaniem šķīvjiem, sarkanām salvetēm un sudraba briežiem" data-alt-ru="Рождественский стол с красными тарелками, красными салфетками и серебряными оленями">
+        <img data-t="zelts" src="img/t-zelts.jpg" width="1000" height="750" loading="lazy" alt="Zelta salvete uz balta šķīvja, zelta galda celiņš un glāzes" data-alt-ru="Золотая салфетка на белой тарелке, золотая дорожка и бокалы">
+      </div>
+      <figcaption><b id="tname"><span data-lang="lv">Balts un eikalipts</span><span data-lang="ru" hidden>Белое и эвкалипт</span></b><span><span data-lang="lv">Restorāna fotogrāfijas</span><span data-lang="ru" hidden>Фотографии ресторана</span></span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="kitchen" id="virtuve">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><p class="ey"><span data-lang="lv">Virtuve</span><span data-lang="ru" hidden>Кухня</span></p><h2><span data-lang="lv">Galds, pie kura sēž ilgi</span><span data-lang="ru" hidden>Стол, за которым сидят долго</span></h2></div>
+      <p class="t"><span data-lang="lv">Zivju un gaļas plates, salāti, sieri un augļi: tā banketa galds izskatās paša restorāna fotogrāfijās.</span><span data-lang="ru" hidden>Рыбное и мясное ассорти, салаты, сыры и фрукты: так банкетный стол выглядит на фотографиях самого ресторана.</span></p>
+    </div>
+    <div class="kgrid">
+      <figure class="arch"><div class="in"><img src="img/edieni-1.jpg" width="800" height="1067" loading="lazy" alt="Banketa galds ar salātiem, zivju un gaļas uzkodām un augļiem" data-alt-ru="Банкетный стол с салатами, рыбными и мясными закусками и фруктами"></div></figure>
+      <figure class="arch"><div class="in"><img src="img/edieni-2.jpg" width="800" height="1067" loading="lazy" alt="Salāti, tomāti, avokado un lasis uz banketa galda" data-alt-ru="Салаты, помидоры, авокадо и лосось на банкетном столе"></div></figure>
+      <div class="kq">
+        <blockquote>
+          <p data-lang="lv">„…Paldies pavāram par garšīgajiem ēdieniem, daudzveidīgo sortimentu…”</p>
+          <p data-lang="ru" hidden>«…Спасибо повару за вкусные блюда и разнообразный ассортимент…»</p>
+          <cite>Gunita Bērziņa, <span data-lang="lv">Google atsauksme</span><span data-lang="ru" hidden>отзыв в Google, перевод с латышского</span></cite>
+        </blockquote>
+        <p class="ask"><span data-lang="lv">Ēdienkarti un cenu vienai personai pajautājiet <a href="#pieteikums">pieteikumā</a>.</span><span data-lang="ru" hidden>Меню и цену на человека спросите в <a href="#pieteikums">заявке</a>.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="atsauksmes">
+  <div class="wrap rgrid">
+    <div class="score"><p class="ey" style="color:rgba(246,239,230,.82)"><span data-lang="lv">Viesi par restorānu</span><span data-lang="ru" hidden>Гости о ресторане</span></p><b>4,7</b><span><span data-lang="lv">no 5 Google kartēs, 126 atsauksmes</span><span data-lang="ru" hidden>из 5 в Google Картах, 126 отзывов</span></span></div>
+    <div class="revs">
+      <figure class="first" data-lang="lv"><p class="q">„…Skaista vieta, labas cenas, garšīgs ēdiens, atsaucīgs personāls. Paldies, ļoti patika.”</p><cite>Jānis K., Google. Rīkojis šeit bēru mielastu jau otro reizi.</cite></figure>
+      <figure data-lang="lv"><p class="q">„Paldies. Gards ēdiens, skaists noformējums un lieliska apkalpošana.”</p><cite>Lelde Lerha, Google</cite></figure>
+      <figure data-lang="lv"><p class="q">«Отличное место, Повар чудо, все было вкусно за адекватную цену… От проведенного там дня Рождения остались в восторге и гости и именинница»</p><cite>Tatyana Melnikova, Facebook, 2025. Dzimšanas diena. Krieviski, kā rakstīts.</cite></figure>
+      <figure class="first" data-lang="ru" hidden><p class="q">«Отличное место, Повар чудо, все было вкусно за адекватную цену… От проведенного там дня Рождения остались в восторге и гости и именинница»</p><cite>Tatyana Melnikova, Facebook, 2025. День рождения.</cite></figure>
+      <figure data-lang="ru" hidden><p class="q">«…Красивое место, хорошие цены, вкусная еда, отзывчивый персонал. Спасибо, очень понравилось»</p><cite>Jānis K., Google, перевод с латышского. Уже второй раз проводил здесь поминальный обед.</cite></figure>
+      <figure data-lang="ru" hidden><p class="q">«Очень хороший зал, вкусно готовят! Очень много праздников у вас отгуляли!»</p><cite>Diana Jankovska, Facebook, 2022</cite></figure>
+    </div>
+  </div>
+</section>
+
+<section class="ask-sec" id="pieteikums">
+  <div class="wrap">
+    <p class="ey"><span data-lang="lv">Pieteikums</span><span data-lang="ru" hidden>Заявка</span></p>
+    <h2><span data-lang="lv">Pieteikt datumu</span><span data-lang="ru" hidden>Оставить заявку</span></h2>
+    <blockquote class="ask-q">«…Было очень просто обо всем договориться…»<cite>Artur Vishnevskiy, <span data-lang="lv">Google atsauksme</span><span data-lang="ru" hidden>отзыв в Google</span></cite></blockquote>
+    <p class="t"><span data-lang="lv">Atzīmējiet galveno. Tālrunis sagatavos īsziņu restorānam, jums atliks to nosūtīt.</span><span data-lang="ru" hidden>Отметьте главное. Телефон подготовит сообщение ресторану, вам останется его отправить.</span></p>
+    <div class="ask-grid">
+      <div class="form">
+        <div class="f">
+          <span class="lab" id="l-occ"><span data-lang="lv">Kāds pasākums?</span><span data-lang="ru" hidden>Какое событие?</span></span>
+          <div class="chips" id="occ" role="group" aria-labelledby="l-occ">
+            <button type="button" class="chip" data-k="kazas" aria-pressed="false"><span data-lang="lv">Kāzas</span><span data-lang="ru" hidden>Свадьба</span></button>
+            <button type="button" class="chip" data-k="jub" aria-pressed="false"><span data-lang="lv">Jubileja</span><span data-lang="ru" hidden>Юбилей</span></button>
+            <button type="button" class="chip" data-k="dzd" aria-pressed="false"><span data-lang="lv">Dzimšanas diena</span><span data-lang="ru" hidden>День рождения</span></button>
+            <button type="button" class="chip" data-k="korp" aria-pressed="false"><span data-lang="lv">Uzņēmuma pasākums</span><span data-lang="ru" hidden>Корпоратив</span></button>
+            <button type="button" class="chip" data-k="sem" aria-pressed="false"><span data-lang="lv">Seminārs</span><span data-lang="ru" hidden>Семинар</span></button>
+            <button type="button" class="chip" data-k="beres" aria-pressed="false"><span data-lang="lv">Bēru mielasts</span><span data-lang="ru" hidden>Поминальный обед</span></button>
+          </div>
+        </div>
+        <div class="f">
+          <label for="date"><span data-lang="lv">Kurā dienā?</span><span data-lang="ru" hidden>В какой день?</span></label>
+          <input type="date" id="date" name="date">
+          <p class="hint" id="date-hint"><span data-lang="lv">Ja datuma vēl nav, atstājiet tukšu.</span><span data-lang="ru" hidden>Если даты ещё нет, оставьте пустым.</span></p>
+        </div>
+        <div class="f">
+          <span class="lab" id="l-gst"><span data-lang="lv">Cik viesu?</span><span data-lang="ru" hidden>Сколько гостей?</span></span>
+          <div class="chips" id="gst" role="group" aria-labelledby="l-gst">
+            <button type="button" class="chip" data-k="a" aria-pressed="false"><span data-lang="lv">līdz 20</span><span data-lang="ru" hidden>до 20</span></button>
+            <button type="button" class="chip" data-k="b" aria-pressed="false">21–40</button>
+            <button type="button" class="chip" data-k="c" aria-pressed="false">41–60</button>
+            <button type="button" class="chip" data-k="d" aria-pressed="false">61–80</button>
+          </div>
+          <p class="hint"><span data-lang="lv">Zālē ir vietas līdz 80 viesiem.</span><span data-lang="ru" hidden>Зал вмещает до 80 гостей.</span></p>
+        </div>
+        <div class="f">
+          <label for="name"><span data-lang="lv">Jūsu vārds <span class="opt">(ja vēlaties)</span></span><span data-lang="ru" hidden>Ваше имя <span class="opt">(по желанию)</span></span></label>
+          <input type="text" id="name" name="name" autocomplete="given-name" maxlength="40">
+        </div>
+        <div class="f">
+          <label class="check"><input type="checkbox" id="menu" checked><span><span data-lang="lv">Lūgt atsūtīt ēdienkarti ar cenām</span><span data-lang="ru" hidden>Попросить прислать меню с ценами</span></span></label>
+        </div>
+      </div>
+      <div class="slip" aria-live="polite">
+        <p class="to"><span data-lang="lv">Īsziņa restorānam, 26&nbsp;806&nbsp;002</span><span data-lang="ru" hidden>Сообщение ресторану, 26&nbsp;806&nbsp;002</span></p>
+        <p class="body" id="preview"></p>
+        <div class="send">
+          <a class="btn" id="sms" href="sms:+37126806002"><span data-lang="lv">Sūtīt īsziņu</span><span data-lang="ru" hidden>Отправить SMS</span></a>
+          <button type="button" class="btn line" id="copy"><span data-lang="lv">Kopēt tekstu</span><span data-lang="ru" hidden>Скопировать</span></button>
+          <a class="btn line" href="tel:+37126806002"><span data-lang="lv">Zvanīt</span><span data-lang="ru" hidden>Позвонить</span></a>
+        </div>
+        <p class="how"><span data-lang="lv">Lapa pati neko nesūta: poga atver jūsu tālruņa īsziņas ar gatavu tekstu. Datorā nokopējiet tekstu un nosūtiet to restorānam <a href="https://www.facebook.com/restoransrever/" target="_blank" rel="noopener">Facebook</a> ziņā vai zvaniet.</span><span data-lang="ru" hidden>Страница сама ничего не отправляет: кнопка открывает сообщения в вашем телефоне с готовым текстом. С компьютера скопируйте текст и отправьте его ресторану сообщением в <a href="https://www.facebook.com/restoransrever/" target="_blank" rel="noopener">Facebook</a> или позвоните.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="find" id="atrast">
+  <div class="wrap fgrid">
+    <div>
+      <p class="ey"><span data-lang="lv">Kā atrast</span><span data-lang="ru" hidden>Как найти</span></p>
+      <h2><span data-lang="lv">Ķengaraga iela 6</span><span data-lang="ru" hidden>ул. Кенгарага 6</span></h2>
+      <p class="addr"><span data-lang="lv">Rīga, LV-1063</span><span data-lang="ru" hidden>Рига, LV-1063</span></p>
+      <p class="t"><span data-lang="lv">Viesiem ir autostāvvieta.</span><span data-lang="ru" hidden>Для гостей есть парковка.</span></p>
+      <div class="go">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=R%C3%8AVER%20Banketu%20restor%C4%81ns%20%C4%B6engaraga%20iela%206%20R%C4%ABga" target="_blank" rel="noopener">Google Maps</a>
+        <a class="btn line" href="tel:+37126806002"><svg aria-hidden="true"><use href="#i-tel"/></svg>26 806 002</a>
+      </div>
+    </div>
+    <div>
+      <ul class="hours">
+        <li><span><span data-lang="lv">Pirmdiena–ceturtdiena</span><span data-lang="ru" hidden>Понедельник–четверг</span></span><span>14.00–22.00</span></li>
+        <li><span><span data-lang="lv">Piektdiena</span><span data-lang="ru" hidden>Пятница</span></span><span>14.00–24.00</span></li>
+        <li><span><span data-lang="lv">Sestdiena</span><span data-lang="ru" hidden>Суббота</span></span><span>12.00–24.00</span></li>
+        <li><span><span data-lang="lv">Svētdiena</span><span data-lang="ru" hidden>Воскресенье</span></span><span>12.00–22.00</span></li>
+      </ul>
+      <p><span data-lang="lv">Darba laiks, kā norādīts restorāna Google profilā.</span><span data-lang="ru" hidden>Часы работы, как указано в профиле ресторана в Google.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="owner" id="ipasniekam">
+  <div class="wrap">
+    <details class="own">
+      <summary><span data-lang="lv">Īpašniekam: ko šī lapa salabo</span><span data-lang="ru" hidden>Владельцу: что исправляет эта страница</span></summary>
+      <div class="own-b">
+        <p class="wide"><span data-lang="lv">Lapa ir domāta jūsu pašu domēnam reverrestorans.lv. Visu zemāk rakstīto pārbaudīju, nevienu vēstuli nesūtot un nevienā kontā neieejot.</span><span data-lang="ru" hidden>Страница задумана для вашего собственного домена reverrestorans.lv. Всё, что написано ниже, я проверил, не отправив ни одного письма и нигде не входя в аккаунт.</span></p>
+        <div><h3><span data-lang="lv">E-pasts vēstules nepieņem</span><span data-lang="ru" hidden>Почта не принимает письма</span></h3><p><span data-lang="lv">Adrese info@reverrestorans.lv, kas norādīta jūsu Facebook lapā, šobrīd vēstules nesaņem: domēna pasta ieraksts ved uz serveri mail.epastam.lv, kura vairs nav. Pārbaudiet paši: nosūtiet uz šo adresi vēstuli no sava e-pasta, tai vajadzētu atgriezties ar kļūdas paziņojumu.</span><span data-lang="ru" hidden>Адрес info@reverrestorans.lv, указанный на вашей странице в Facebook, сейчас письма не получает: почтовая запись домена ведёт на сервер mail.epastam.lv, которого больше нет. Проверьте сами: отправьте на этот адрес письмо со своей почты, оно должно вернуться с сообщением об ошибке.</span></p></div>
+        <div><h3><span data-lang="lv">Domēns stāv tukšs</span><span data-lang="ru" hidden>Домен стоит пустой</span></h3><p><span data-lang="lv">Domēns reverrestorans.lv ir reģistrēts un aktīvs, bet tajā nekas neatveras. Šī lapa atvērtos tieši tur, jūsu pašu adresē.</span><span data-lang="ru" hidden>Домен reverrestorans.lv зарегистрирован и активен, но на нём ничего не открывается. Эта страница открывалась бы именно там, по вашему собственному адресу.</span></p></div>
+        <div><h3><span data-lang="lv">Google poga „Vietne” ved uz Facebook</span><span data-lang="ru" hidden>Кнопка «Сайт» в Google ведёт в Facebook</span></h3><p><span data-lang="lv">Cilvēkam, kurš nav pieslēdzies Facebook, lapu jau pēc dažām sekundēm aizsedz pieslēgšanās logs. Pogu var pārlikt uz šo lapu, kur zāle, tālrunis un pieteikums redzami uzreiz.</span><span data-lang="ru" hidden>Человеку, который не вошёл в Facebook, страницу уже через несколько секунд закрывает окно входа. Кнопку можно перевести на эту страницу, где зал, телефон и заявка видны сразу.</span></p></div>
+        <div><h3><span data-lang="lv">Ēdienkarte ir tikai Instagram</span><span data-lang="ru" hidden>Меню есть только в Instagram</span></h3><p><span data-lang="lv">Izceltie stāsti „Menu LV” un „Menu RU” bez Instagram konta neatveras, un citur internetā ēdienkartes neatradu. Lapā cenu nav: neesmu ierakstījis nevienu skaitli. Ja atsūtīsiet ēdienkarti, ielikšu to.</span><span data-lang="ru" hidden>Разделы «Menu LV» и «Menu RU» в «Актуальном» без аккаунта Instagram не открываются, а больше нигде в интернете я меню не нашёл. Цен на странице нет: я не вписал ни одной цифры. Если пришлёте меню, поставлю его.</span></p></div>
+        <div class="wide"><h3><span data-lang="lv">Pirms publicēšanas lūgšu apstiprināt</span><span data-lang="ru" hidden>Перед публикацией попрошу подтвердить</span></h3>
+          <ol>
+            <li><span data-lang="lv">Viesu skaits: Instagram aprakstā un 2022. gada ierakstā ir 80, 2020. gada ierakstā 70. Lapā lietoju 80.</span><span data-lang="ru" hidden>Число гостей: в описании Instagram и в записи 2022 года 80, в записи 2020 года 70. На странице я взял 80.</span></li>
+            <li><span data-lang="lv">Vai autostāvvieta ir bez maksas un vai var ņemt līdzi savus dzērienus bez korķa naudas. Abas lietas ir tikai jūsu 2020. gada ierakstos, tāpēc lapā tās nerakstu.</span><span data-lang="ru" hidden>Бесплатная ли парковка и можно ли приносить свои напитки без пробкового сбора. Оба пункта есть только в ваших записях 2020 года, поэтому на странице я их не пишу.</span></li>
+            <li><span data-lang="lv">Darba laiks pārrakstīts no jūsu Google profila 2026. gada oktobrī.</span><span data-lang="ru" hidden>Часы работы переписаны из вашего профиля в Google в октябре 2026 года.</span></li>
+            <li><span data-lang="lv">Vai uz 26 806 002 pienāk īsziņas? Ja šim numuram ir WhatsApp, pogu pārlikšu uz WhatsApp, teksts paliek tas pats.</span><span data-lang="ru" hidden>Приходят ли на 26 806 002 SMS? Если на этом номере есть WhatsApp, переведу кнопку на WhatsApp, текст останется тем же.</span></li>
+            <li><span data-lang="lv">Zāles kopskats ir viesa fotogrāfija no Google. Publicējot vajadzēs autores atļauju vai jūsu pašu foto no tā paša skatpunkta.</span><span data-lang="ru" hidden>Общий вид зала — фотография гостьи из Google. Для публикации понадобится её разрешение или ваше собственное фото с той же точки.</span></li>
+          </ol>
+        </div>
+        <p class="wide"><span data-lang="lv">Ja vēlaties, pieslēgšu šo lapu jūsu domēnam, salabošu e-pastu un palīdzēšu pārlikt Google pogu. Ja nē, e-pasta kļūdu varat salabot arī bez manis: tagad zināt, kur tā ir. Nikita, <a href="mailto:ngoloveckis@gmail.com">ngoloveckis@gmail.com</a></span><span data-lang="ru" hidden>Если хотите, я подключу эту страницу к вашему домену, починю почту и помогу перевести кнопку в Google. Если нет, ошибку с почтой можно исправить и без меня: теперь вы знаете, где она. Никита, <a href="mailto:ngoloveckis@gmail.com">ngoloveckis@gmail.com</a></span></p>
+      </div>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span data-lang="lv">Šo lapu kā dizaina priekšlikumu sagatavoja Nikita, ngoloveckis@gmail.com. Tā nav restorāna RÊVER oficiālā mājaslapa.</span><span data-lang="ru" hidden>Эту страницу как дизайн-предложение подготовил Никита, ngoloveckis@gmail.com. Это не официальный сайт ресторана RÊVER.</span></p>
+    <p><span data-lang="lv">Fotogrāfijas un ornaments: no restorāna Google profila un Facebook lapas. Zāles kopskats: Natasha Čornaja, Google. Atsauksmes: Google un Facebook.</span><span data-lang="ru" hidden>Фотографии и орнамент: из профиля ресторана в Google и его страницы в Facebook. Общий вид зала: Natasha Čornaja, Google. Отзывы: Google и Facebook, латышские в переводе.</span></p>
+  </div>
+</footer>
+
+<div class="dock" id="dock">
+  <a class="btn" href="#pieteikums"><span data-lang="lv">Pieteikt datumu</span><span data-lang="ru" hidden>Оставить заявку</span></a>
+  <a class="btn line" href="tel:+37126806002" aria-label="26 806 002"><svg aria-hidden="true"><use href="#i-tel"/></svg></a>
+</div>
+
+<script>
+(function(){
+  // language: the link (?lang=ru) wins, then the visitor's own earlier choice, then a Russian browser, else Latvian
+  var lang = 'lv', known = false;
+  try { var s = localStorage.getItem('rever-lang'); if (s === 'lv' || s === 'ru') { lang = s; known = true; } } catch(e){}
+  var q = (location.search.match(/[?&]lang=(lv|ru)\b/) || [])[1]; if (q) { lang = q; known = true; }
+  if (!known && /^ru\b/i.test(navigator.language || '')) lang = 'ru';
+
+  var $ = function(id){ return document.getElementById(id); };
+  var st = { occ:'', gst:'' };
+
+  var T = {
+    lv: {
+      hello: 'Labdien! Vēlos pie jums rīkot ',
+      occ: { kazas:'kāzas', jub:'jubileju', dzd:'dzimšanas dienu', korp:'uzņēmuma pasākumu', sem:'semināru', beres:'bēru mielastu', '':'pasākumu' },
+      wd: ['svētdiena','pirmdiena','otrdiena','trešdiena','ceturtdiena','piektdiena','sestdiena'],
+      mo: ['janvāris','februāris','marts','aprīlis','maijs','jūnijs','jūlijs','augusts','septembris','oktobris','novembris','decembris'],
+      date: function(d){ return 'Datums: ' + this.wd[d.getDay()] + ', ' + d.getFullYear() + '. gada ' + d.getDate() + '. ' + this.mo[d.getMonth()] + '.'; },
+      nodate: 'Datums vēl nav zināms.',
+      gst: { a:'Viesi: līdz 20.', b:'Viesi: 21–40.', c:'Viesi: 41–60.', d:'Viesi: 61–80.' },
+      askBoth: 'Lūdzu, atbildiet, vai šis datums ir brīvs, un atsūtiet ēdienkarti ar cenām.',
+      askDate: 'Lūdzu, atbildiet, vai šis datums ir brīvs.',
+      askMenu: 'Lūdzu, atsūtiet ēdienkarti ar cenām.',
+      askNone: 'Lūdzu, sazinieties ar mani.',
+      past: 'Šis datums jau ir pagājis. Izvēlieties citu.',
+      hint: 'Ja datuma vēl nav, atstājiet tukšu.',
+      copied: 'Nokopēts', copy: 'Kopēt tekstu',
+      group: 'Valoda',
+      title: 'RÊVER, banketu restorāns Rīgā',
+      desc: 'Banketu zāle zem ķieģeļu arkām Ķengaragā: līdz 80 viesiem, autostāvvieta. Dizaina priekšlikums.'
+    },
+    ru: {
+      hello: 'Здравствуйте! Хочу провести у вас ',
+      occ: { kazas:'свадьбу', jub:'юбилей', dzd:'день рождения', korp:'корпоратив', sem:'семинар', beres:'поминальный обед', '':'мероприятие' },
+      wd: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+      mo: ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'],
+      date: function(d){ return 'Дата: ' + this.wd[d.getDay()] + ', ' + d.getDate() + ' ' + this.mo[d.getMonth()] + ' ' + d.getFullYear() + ' г.'; },
+      nodate: 'Дата пока не определена.',
+      gst: { a:'Гостей: до 20.', b:'Гостей: 21–40.', c:'Гостей: 41–60.', d:'Гостей: 61–80.' },
+      askBoth: 'Пожалуйста, ответьте, свободна ли эта дата, и пришлите меню с ценами.',
+      askDate: 'Пожалуйста, ответьте, свободна ли эта дата.',
+      askMenu: 'Пожалуйста, пришлите меню с ценами.',
+      askNone: 'Пожалуйста, свяжитесь со мной.',
+      past: 'Эта дата уже прошла. Выберите другую.',
+      hint: 'Если даты ещё нет, оставьте пустым.',
+      copied: 'Скопировано', copy: 'Скопировать',
+      group: 'Язык',
+      title: 'RÊVER, банкетный ресторан в Риге',
+      desc: 'Банкетный зал под кирпичными арками в Кенгарагсе: до 80 гостей, парковка. Дизайн-предложение.'
+    }
+  };
+
+  function today(){ var n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); }
+  function iso(d){ var m = d.getMonth() + 1, x = d.getDate(); return d.getFullYear() + '-' + (m < 10 ? '0' : '') + m + '-' + (x < 10 ? '0' : '') + x; }
+  function pickedDate(){
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec($('date').value || '');
+    if (!m) return null;
+    var d = new Date(+m[1], +m[2] - 1, +m[3]);
+    return isNaN(d.getTime()) ? null : d;
+  }
+
+  function message(){
+    var t = T[lang], d = pickedDate(), past = !!(d && d < today());
+    if (past) d = null;
+    var hint = $('date-hint');
+    hint.className = past ? 'hint err' : 'hint';
+    hint.textContent = past ? t.past : t.hint;
+    var lines = [t.hello + t.occ[st.occ] + '.'];
+    lines.push(d ? t.date(d) : t.nodate);
+    if (st.gst) lines.push(t.gst[st.gst]);
+    var menu = $('menu').checked;
+    lines.push(d ? (menu ? t.askBoth : t.askDate) : (menu ? t.askMenu : t.askNone));
+    var name = ($('name').value || '').replace(/\s+/g, ' ').trim();
+    if (name) lines.push(name);
+    return lines.join('\n');
+  }
+
+  function render(){
+    var msg = message();
+    $('preview').textContent = msg;
+    $('sms').href = 'sms:+37126806002?&body=' + encodeURIComponent(msg);
+  }
+
+  var pics = document.querySelectorAll('img[data-alt-ru]'), metaDesc = document.querySelector('meta[name="description"]');
+  for (var p = 0; p < pics.length; p++) pics[p].setAttribute('data-alt-lv', pics[p].alt);
+
+  function setLang(l, keep){
+    lang = l; document.documentElement.lang = l;
+    document.title = T[l].title;
+    if (metaDesc) metaDesc.setAttribute('content', T[l].desc);
+    for (var a = 0; a < pics.length; a++) pics[a].alt = pics[a].getAttribute('data-alt-' + l);
+    var els = document.querySelectorAll('[data-lang]');
+    for (var i = 0; i < els.length; i++) els[i].hidden = els[i].getAttribute('data-lang') !== l;
+    var bs = document.querySelectorAll('.lang button');
+    for (var j = 0; j < bs.length; j++) bs[j].setAttribute('aria-pressed', bs[j].getAttribute('data-set') === l ? 'true' : 'false');
+    document.querySelector('.lang').setAttribute('aria-label', T[l].group);
+    if (keep) { try { localStorage.setItem('rever-lang', l); } catch(e){} }
+    render();
+  }
+
+  function group(id, key){
+    var box = $(id);
+    box.addEventListener('click', function(e){
+      var b = e.target.closest ? e.target.closest('.chip') : null; if (!b) return;
+      var k = b.getAttribute('data-k');
+      st[key] = st[key] === k ? '' : k;
+      var all = box.querySelectorAll('.chip');
+      for (var i = 0; i < all.length; i++) all[i].setAttribute('aria-pressed', all[i].getAttribute('data-k') === st[key] ? 'true' : 'false');
+      render();
+    });
+  }
+  group('occ', 'occ'); group('gst', 'gst');
+
+  $('date').min = iso(today());
+  ['input', 'change'].forEach(function(ev){
+    $('date').addEventListener(ev, render); $('name').addEventListener(ev, render); $('menu').addEventListener(ev, render);
+  });
+
+  $('copy').addEventListener('click', function(){
+    var msg = message(), btn = this;
+    function done(){
+      var sp = btn.querySelector('[data-lang="' + lang + '"]');
+      sp.textContent = T[lang].copied;
+      setTimeout(function(){ var a = btn.querySelector('[data-lang="lv"]'), b = btn.querySelector('[data-lang="ru"]'); a.textContent = T.lv.copy; b.textContent = T.ru.copy; }, 1800);
+    }
+    function old(){
+      var ta = document.createElement('textarea'); ta.value = msg; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch(e){}
+      document.body.removeChild(ta);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(msg).then(done, old); else old();
+  });
+
+  var langBtns = document.querySelectorAll('.lang button');
+  for (var k = 0; k < langBtns.length; k++) langBtns[k].addEventListener('click', function(){ setLang(this.getAttribute('data-set'), true); });
+
+  // the phone bar: only while neither the opening buttons, nor the enquiry itself, nor the owner's section are on screen
+  var dock = $('dock'), seen = { herocta:true, pieteikums:false, ipasniekam:false };
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ seen[e.target.id] = e.isIntersecting; });
+      dock.classList.toggle('on', !seen.herocta && !seen.pieteikums && !seen.ipasniekam);
+    }, { threshold: 0 });
+    io.observe($('herocta')); io.observe($('pieteikums')); io.observe($('ipasniekam'));
+  }
+
+  // the table: one of their four settings at a time
+  var TN={lv:{balts:'Balts un eikalipts',rudens:'Rudens',ziema:'Ziemassvētki',zelts:'Zelts'},ru:{balts:'Белое и эвкалипт',rudens:'Осень',ziema:'Рождество',zelts:'Золото'}};
+  var tcur='balts';
+  function showTheme(k){
+    tcur=k;
+    var bs=document.querySelectorAll('.themes button');
+    for(var i=0;i<bs.length;i++) bs[i].setAttribute('aria-pressed', bs[i].getAttribute('data-t')===k?'true':'false');
+    var im=document.querySelectorAll('.stage img');
+    for(var j=0;j<im.length;j++){ var on=im[j].getAttribute('data-t')===k; im[j].classList.toggle('on',on); if(on&&im[j].loading==='lazy') im[j].loading='eager'; }
+    var n=$('tname'); n.innerHTML='<span data-lang="lv"'+(lang==='lv'?'':' hidden')+'>'+TN.lv[k]+'</span><span data-lang="ru"'+(lang==='ru'?'':' hidden')+'>'+TN.ru[k]+'</span>';
+  }
+  var tb=document.querySelectorAll('.themes button');
+  for(var t=0;t<tb.length;t++) tb[t].addEventListener('click',function(){ showTheme(this.getAttribute('data-t')); });
+
+  setLang(lang);
+})();
+</script>
+</body>
+</html>
